@@ -1,0 +1,17 @@
+﻿<Page x:Class="UNO.Sample.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:UNO.Sample"
+      xmlns:controls="using:UNO.Sample.MauiControls"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <ScrollViewer>
+        <Grid>
+            <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <embed:MauiHost x:Name="MauiHostElement"
+                                xmlns:embed="using:Uno.Extensions.Maui"
+                                Source="controls:EmbeddedControl" />
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>
